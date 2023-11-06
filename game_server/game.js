@@ -19,7 +19,7 @@ const gameObj = {
   airTotal: 10,
   itemRadius: 4,
   airRadius: 6,
-  addAirTime: 30,
+  addAirTime: 25,
   itemPoint: 3,
   killPoint: 500,
   submarineImageWidth: 42
