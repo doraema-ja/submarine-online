@@ -605,9 +605,9 @@ $(window).on("keydown", (event) => {
       sendChangeDirection(socket, 'right');
       break;
       case ' ': // スペースキー
-      if (gameObj.myPlayerObj.missilesMany <= 0) break; // ミサイルのストックが 0
+      //if (gameObj.myPlayerObj.missilesMany <= 0) break; // ミサイルのストックが 0
 
-      //gameObj.myPlayerObj.missilesMany -= 1;
+      gameObj.myPlayerObj.missilesMany -= 1;
       const missileId = Math.floor(Math.random() * 100000) + ',' + gameObj.myPlayerObj.socketId + ',' + gameObj.myPlayerObj.x + ',' + gameObj.myPlayerObj.y;
 
       const missileObj = {
